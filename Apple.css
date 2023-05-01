@@ -1,0 +1,783 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+@media screen and (max-width: 401px) {
+  #menu {
+    display: none;
+}
+ .menuicon {
+   margin-left: 0px;
+   margin-right: 10px;
+   flex:shrink ;
+   transform: scale(0.5);
+ }
+ #nav ul{
+   padding-left: 0px;
+ }
+ #link {
+   font-size: small;
+ }
+  }
+@media screen and (max-width: 750px) {
+    #menu {
+        display: none;
+    }
+    #nav ul{
+      padding-left: 0px;
+    }
+    .menuicon{
+        display: show;
+        flex:shrink ;
+   transform: scale(0.5);
+   margin-right: 0px;
+   padding-left: 0px;
+   align-items: left;
+    }
+    #whitetab{
+      font-size: 11px;
+    }
+   
+    }
+
+
+@media screen and (min-width: 750px) {
+ #menu {
+  display: show;
+}
+.menuicon{
+    display: none;
+}
+}
+
+@media screen and (min-width: 1000px) {
+#menu {
+  display: show;
+}
+.menuicon{
+    display: none;
+}
+}
+#link {
+    background-color: blue;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+#nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+ transition-duration: 0.5s;
+ background-color: black; 
+ margin-bottom: 0;
+ line-height: 50px;
+ padding-left: 150px;
+ padding-right: 150px;
+ opacity: 90%;
+  }
+.menuthing {
+  display: inline-block;
+  cursor: pointer;
+  }
+
+.menuicon {
+  margin-top: 9px;
+  border: 1px;
+  width: 25px;
+  height:25px;
+
+  }
+  #appleicon{
+    margin-top: 7px;
+  }
+  #bagicon{
+    margin-top: 7px;
+    margin-left: 24px;
+    margin-right: 12px;
+    padding-right: 24px;
+  }
+#bar1, #bar2, #bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 7px 0;
+  transition: 0.4s;
+  }
+
+/* Rotate first bar */
+.change #bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+
+/* Fade out the second bar */
+.change #bar2 {
+  opacity: 0;
+  }
+
+/* Rotate last bar */
+.change #bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+#nav {
+    overflow: hidden;
+ position: fixed; /* Set the navbar to fixed position */
+ top: 0; /* Position the navbar at the top of the page */
+ width: 100%; /* Full width */
+ height: 50px;
+ z-index: 1000;
+  }
+
+.icon {
+    margin-top: 7px;
+  }
+a:link {
+    text-decoration: none;
+    color:white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color:white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color:white; 
+  }
+   a:link{
+    text-decoration: none;
+    color:white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color:white;
+  }
+  
+  a:hover.linkunderline  {
+    text-decoration: underline;
+    color: aliceblue;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color:white; 
+  }
+
+  #rightarrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 2px;
+  }
+
+  #whitetab {
+    background-color:white;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  a:link.shoponline{
+    text-decoration: none;
+    color:blue;
+  }
+  
+  a:visited.shoponline {
+    text-decoration: none;
+    color:blue;
+  }
+  
+  a:hover.shoponline  {
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  a:active.shoponline{
+    text-decoration: underline;
+    color:blue; 
+  }
+
+   .iPhoneSEpic {
+    width: 100%;
+    height: 680px;
+  }
+
+
+  .iPhoneSE {
+    font-size: 60px;
+    font-weight: 650;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .SEsub1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+  }
+  .SEsub2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+  }
+  .SEsub3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: darkgrey;
+  }
+
+  .arrowright {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid rgb(75, 123, 255);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+    top: 56.5%;
+    left: 51%;
+    }
+
+  .learnmore {
+    position: absolute;
+    top: 57%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: rgb(75, 123, 255);
+  }
+
+  .buy {
+    position: absolute;
+    top: 57%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: rgb(75, 123, 255);
+  }
+  .arrowright2 {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid rgb(75, 123, 255);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+    top: 56.5%;
+    left: 58.5%;
+    }
+
+    a:link.learnmorelink {
+      text-decoration: none;
+      color: rgb(75, 123, 255);
+    }
+    
+    a:visited.learnmorelink {
+      text-decoration: none;
+      color:rgb(75, 123, 255);
+    }
+    
+    a:hover.learnmorelink {
+      text-decoration: underline;
+      color: rgb(75, 123, 255);
+    }
+    
+    a:active.learnmorelink {
+      text-decoration: underline;
+      color:rgb(75, 123, 255); 
+    }
+
+    a:link.buy {
+      text-decoration: none;
+      color: rgb(75, 123, 255);
+    }
+    
+    a:visited.buy {
+      text-decoration: none;
+      color:rgb(75, 123, 255);
+    }
+    
+    a:hover.buy {
+      text-decoration: underline;
+      color: rgb(75, 123, 255);
+    }
+    
+    a:active.buy {
+      text-decoration: underline;
+      color:rgb(75, 123, 255); 
+    }
+
+    .iPhone11pic {
+      width: 100%;
+      height: 680px;
+    }
+
+    .iPhone11 {
+      font-size: 60px;
+      font-weight: 650;
+      position: absolute;
+      top: 685pt;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+    }
+
+    .sub1 {
+      position: absolute;
+      top: 730pt;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 30px;
+    }
+    .sub2 {
+      position: absolute;
+      top: 758pt;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: darkgrey;
+    }
+    
+    .sub3 {
+      position: absolute;
+      top: 790pt;
+      left: 47%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+    }
+
+    .arrowright3 {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      position: absolute;
+      top: 787.5pt;
+      left: 51%;
+    }
+
+    .sub4 {
+      position: absolute;
+      top: 790pt;
+      left: 57%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+      color: rgb(75, 123, 255);
+    }
+    .arrowright4 {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      position: absolute;
+      top: 787.5pt;
+      left: 58.5%;
+    }
+    .iPadpropic {
+      width: 100%;
+      height: 680px;
+    }
+
+    .ipadpro{
+      font-size: 60px;
+      font-weight: 650;
+      position: absolute;
+      top: 42.5cm;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+    }
+    .ipadsub1 {
+      position: absolute;
+      top: 44.2cm;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 30px;
+    }
+    .ipadsub2 {
+      position: absolute;
+      top: 45.5cm;
+      left: 47%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+    }
+
+    .arrowright5 {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      position: absolute;
+      top: 45.4cm;
+      left: 51%;
+    }
+    .ipadsub3 {
+      position: absolute;
+      top: 45.5cm;
+      left: 57%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+    }
+
+    .arrowright6 {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      position: absolute;
+      top: 45.4cm;
+      left: 58.5%;
+    }
+
+    #left {
+      float: left;
+      width: 49.5%;
+      left: 0px;
+    }
+
+    #right {
+      float: right;
+      width: 49.5%;
+      right: 0px;
+    }
+
+    .shoppingpic {
+      height: 620px;
+      width: 100%;
+    }
+
+    .buymac {
+      position: absolute;
+      top: 61cm;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: 640;
+    }
+
+    #footer {
+      background-color: #eeeeee;
+      width: 100%;
+      left: 15%;
+      margin-left: 24px;
+      width: 70%;
+      text-align: center;
+      position: absolute;
+      top: 4200px;
+    }
+    
+    .shopsub2{
+      position: absolute;
+      top: 63cm;
+      left: 22%;
+      transform: translate(-50%, -50%);
+      font-size: 22px;
+    }
+
+    .arrowright7 {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      position: absolute;
+      top: 62.9cm;
+      left: 24%;
+    }
+
+    .cardsub1 {
+      position: absolute;
+      top: 77cm;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: 640;
+    }
+    .cardsub2 {
+      position: absolute;
+      top: 78.25cm;
+      left: 25.3%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: 640;
+    }
+
+    .cardsub3 {
+      position: absolute;
+      top: 80cm;
+      left: 25.3%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 22px;
+      font-weight: 450;
+    }
+
+    span.space {
+     margin-left: 15%;
+    }
+
+    .cardsub4 {
+      position: absolute;
+      top: 81.5cm;
+      left: 25.3%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: 450;
+    }
+
+    .arrowright8 {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3.5px;
+      position: absolute;
+      top: 81.45cm;
+      left: 28.75%; 
+    }
+    .watch {
+      position: absolute;
+      top: 93.5cm;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: 500;
+      left: 24.5%;
+    }
+
+   #bigapple {
+      position: absolute;  
+      top: 93.5cm;
+      left: 18%;
+      transform: translate(-50%, -50%);
+    }
+
+    .series5 {
+      color: rgb(221, 37, 37);
+      position: absolute;
+      top: 94.2cm;
+      font-size: 18px;
+      left: 21%;
+      font-weight: 500;
+    }
+
+    .watchsub3{
+      font-size: 24px;
+      top:96cm ;
+      left:24% ;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+    
+    .watchsub4 {
+      top: 97.2cm;
+      left: 16.5%;
+      position: absolute;
+      font-size:22px ;
+    }
+    
+    .arrowright9{
+      position: absolute;
+      font-size: 22px;
+      top: 97.55cm;
+      left:24%;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3.4px;
+    }
+
+    .watchsub5 {
+      top: 97.6cm;
+      left: 29%;
+      position: absolute;
+      font-size:22px ;
+    }
+
+    .arrowright10{
+      position: absolute;
+      font-size: 22px;
+      top: 97.55cm;
+      left:30.4%;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3.4px;
+    }
+
+    .airpodsub1 {
+      position: absolute;
+      top: 60.2cm;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: 640
+    }
+
+    .airpodsub2 {
+      position: absolute;
+      top: 61.8cm;
+      left: 75.3%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 22px;
+      font-weight: 450;
+    }
+
+    .airpodsub3{
+      position: absolute;
+      top: 62.9cm;
+      left: 68%;
+      font-size: 22px;
+    }
+
+    .arrowright11{
+      position: absolute;
+      font-size: 22px;
+      top: 63.25cm;
+      left:75.5%;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3.4px;
+    }
+    .airpodsub4 {
+      position: absolute;
+      top: 63.3cm;
+      left: 81%;
+      font-size: 22px;
+    } 
+
+    .arrowright12 {
+      position: absolute;
+      font-size: 22px;
+      top: 63.25cm;
+      left:82.2%;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3.4px;
+    }
+
+    .applesub1 {
+      position: absolute;
+      font-size: 42px;
+      top: 94cm;
+      left: 74%;
+      transform: translate(-50%, -50%);
+      font-weight: 640;
+    }
+
+    .applesub2 {
+      position: absolute;
+      font-size: 42px;
+      top: 95.2cm;
+      left: 73%;
+      transform: translate(-50%, -50%);
+      font-weight: 640;
+    }
+
+    .applesub3 {
+      position: absolute;
+      top: 96.5cm;
+      left: 69.5%;
+      font-size: 22px;
+    }
+    
+    .arrowright13{
+      position: absolute;
+      font-size: 22px;
+      top: 96.85cm;
+      left:79.2%;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      border: solid rgb(75, 123, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3.4px;
+    }
+
+    .callout {
+      position: fixed;
+      bottom: 35px;
+      right: 20px;
+      margin-left: 20px;
+      max-width: 300px;
+    }
+    .callout-header {
+      padding: 25px 15px;
+      background: #555;
+      font-size: 30px;
+      color: white;
+    }
+    
+    .callout-container {
+      padding: 15px;
+      background-color: #ccc;
+      color: black
+    }
+    
+    .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    
+    .closebtn:hover {
+      color: lightgrey;
+    }
+    
